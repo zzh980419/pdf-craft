@@ -1,0 +1,62 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.venv
+ENV/
+env.bak/
+venv.bak/
+*.pyc
+*.pyo
+*.pyd
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Development files
+test*.py
+debug*.py
+*_test/
+*_analysis/
+outputs/
+page_markdown_output/
+*_assets/
+demo_output/
+assets/
+
+# Large test files
+tests/assets/
+
+# Documentation
+docs/
+examples/
+README*.md
+*.md
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS
+.DS_Store
+Thumbs.db

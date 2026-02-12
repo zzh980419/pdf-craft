@@ -1,0 +1,56 @@
+{
+    "[xml]": {
+        "editor.wordWrap": "on"
+    },
+    "[xhtml]": {
+        "editor.wordWrap": "on"
+    },
+    "[python]": {
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "never"
+        },
+        "files.trimTrailingWhitespace": true
+    },
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportUnnecessaryTypeIgnoreComment": "none"
+    },
+    "python.analysis.typeCheckingMode": "basic",
+    "files.trimTrailingWhitespace": true,
+    "cSpell.words": [
+        "ahocorasick",
+        "analysed",
+        "analysing",
+        "clazz",
+        "CUDA",
+        "dets",
+        "epub",
+        "frombytes",
+        "gundam",
+        "LOCALAPPDATA",
+        "MATHML",
+        "mediabox",
+        "metas",
+        "noembed",
+        "noframes",
+        "Nonspacing",
+        "OOMOL",
+        "pdfinfo",
+        "pixmap",
+        "poppler",
+        "pyahocorasick",
+        "pyenv",
+        "pylatexenc",
+        "pylint",
+        "pypdf",
+        "pytest",
+        "REGX",
+        "SSOHH'mm",
+        "tagfilter",
+        "torchvision",
+        "venv",
+        "virtualenvs",
+        "YYYYMMDDH",
+        "Zeyu"
+    ]
+}

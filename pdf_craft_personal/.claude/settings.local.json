@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(poetry run:*)",
+      "Bash(python test:*)",
+      "Bash(python:*)",
+      "Bash(set PYTHONIOENCODING=utf-8)",
+      "Bash(pip install:*)",
+      "Bash(poetry show:*)",
+      "Bash(del:*)",
+      "Bash(poetry lock:*)",
+      "Bash(docker:*)",
+      "Bash(dir:*)",
+      "Bash(find:*)",
+      "Bash(timeout 10 docker run --rm -p 5000:5000 pdf-craft:latest)",
+      "Bash(timeout 15 docker run --rm -p 5000:5000 pdf-craft:latest)",
+      "Bash(sed:*)",
+      "Bash(curl:*)"
+    ],
+    "deny": [],
+    "ask": [],
+    "additionalDirectories": [
+      "E:\\",
+      "E:\\d E:\\projects\\py",
+      "E:\\E\\projects\\py",
+      "E:\\mnt\\e\\projects\\py"
+    ]
+  }
+}

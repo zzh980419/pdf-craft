@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  pdf-craft-api:
+    build: .
+    ports:
+      - "1157:1157"
+    environment:
+      - FLASK_ENV=production
+    volumes:
+      - ./outputs:/app/outputs
+      - ./pdf_files:/app/pdf_files  # 挂载PDF文件目录
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:1157/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

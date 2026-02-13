@@ -212,8 +212,16 @@ def parse_pdf_pages():
                         file_path = None
                         if save_markdown:
                             # Use the same output structure as before
-                            output_basename = f"{Path(pdf_path).stem}_{hash(str(Path(pdf_path).stat().st_mtime))[:6]}"
-                            output_md_dir = Path(f"/outputs_md/{output_basename}")
+                            file_hash = str(hash(str(Path(pdf_path).stat().st_mtime)))[:6]
+                            output_basename = f"{Path(pdf_path).stem}_{file_hash}"
+                            
+                            # Get base output directory from config (relative to project root)
+                            import os
+                            base_output_dir = os.getenv('MD_OUTPUT_DIR', 'outputs_md')
+                            
+                            # Create path relative to project root
+                            project_root = Path(__file__).parent
+                            output_md_dir = project_root / base_output_dir / output_basename
                             output_md_dir.mkdir(parents=True, exist_ok=True)
                             
                             md_filename = f"{Path(pdf_path).stem}_{page_num}.md"

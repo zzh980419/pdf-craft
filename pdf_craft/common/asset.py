@@ -12,6 +12,11 @@ ASSET_TAGS: tuple[AssetRef, ...] = ("image", "table", "equation")
 class AssetHub:
     def __init__(self, asset_path: Path) -> None:
         self._asset_path = asset_path
+    
+    @property
+    def path(self) -> Path:
+        """Get the asset path"""
+        return self._asset_path
 
     def clip(self, image: Image.Image, det: tuple[int, int, int, int]) -> str:
         cropped_image = image.crop(det)
